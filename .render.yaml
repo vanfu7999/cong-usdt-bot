@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: cong-usdt-bot
+    env: python
+    buildCommand: ""
+    startCommand: "python main.py"
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: CHAT_ID
+        sync: false
+      - key: TARGET_URL
+        sync: false
